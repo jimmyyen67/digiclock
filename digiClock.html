@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>數位時鐘</title>
+  <link rel="stylesheet" href="digiclock.css">
+</head>
+
+<body>
+  <span id="demo"></span>
+  <div style="display:flex">
+    <div class="hour1">
+      <span id="h1bar1"></span>
+      <span id="h1bar2"></span>
+      <span id="h1bar3"></span>
+      <span id="h1bar4"></span>
+      <span id="h1bar5"></span>
+      <span id="h1bar6"></span>
+      <span id="h1bar7"></span>
+    </div>
+    <div class="hour2">
+      <span id="h2bar1"></span>
+      <span id="h2bar2"></span>
+      <span id="h2bar3"></span>
+      <span id="h2bar4"></span>
+      <span id="h2bar5"></span>
+      <span id="h2bar6"></span>
+      <span id="h2bar7"></span>
+    </div>
+    <div class="mins1">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+      <span class="bar4"></span>
+      <span class="bar5"></span>
+      <span class="bar6"></span>
+      <span class="bar7"></span>
+    </div>
+    <div class="mins2">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+      <span class="bar4"></span>
+      <span class="bar5"></span>
+      <span class="bar6"></span>
+      <span class="bar7"></span>
+    </div>
+    <div class="sec1">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+      <span class="bar4"></span>
+      <span class="bar5"></span>
+      <span class="bar6"></span>
+      <span class="bar7"></span>
+    </div>
+    <div class="sec2">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+      <span class="bar4"></span>
+      <span class="bar5"></span>
+      <span class="bar6"></span>
+      <span class="bar7"></span>
+    </div>
+  </div>
+  <hr>
+  <span id="h1"></span>
+  <span id="h2"></span>
+  <span>：</span>
+  <span id="m1"></span>
+  <span id="m2"></span>
+  <span>：</span>
+  <span id="s1"></span>
+  <span id="s2"></span>
+
+
+
+  <script>
+    var nowTime = new Date();
+    var nowH = nowTime.getHours();
+    if (nowH < 10) {
+      nowH = "0" + nowH;
+    }
+    var nowM = nowTime.getMinutes();
+    if (nowM < 10) {
+      nowM = "0" + nowM;
+    }
+    var nowS = nowTime.getSeconds();
+    if (nowS < 10) {
+      nowS = "0" + nowS;
+    }
+    document.querySelector("#demo").textContent = `${nowH}:${nowM}:${nowS}`;
+    var nowH1 = nowH.toString().substr(0, 1);
+    var nowH2 = nowH.toString().substr(1, 1);
+    var nowM1 = nowM.toString().substr(0, 1);
+    var nowM2 = nowM.toString().substr(1, 1);
+    var nowS1 = nowS.toString().substr(0, 1);
+    var nowS2 = nowS.toString().substr(1, 1);
+    document.getElementById("h1").textContent = nowH1;
+    document.getElementById("h2").textContent = nowH2;
+    document.getElementById("m1").textContent = nowM1;
+    document.getElementById("m2").textContent = nowM2;
+    document.getElementById("s1").textContent = nowS1;
+    document.getElementById("s2").textContent = nowS2;
+  </script>
+  <script src="digiclock.js"></script>
+</body>
+
+</html>
