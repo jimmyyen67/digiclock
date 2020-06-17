@@ -5,7 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <style>
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
     .num {
       width: 100px;
       height: 100px;
@@ -35,7 +44,7 @@
     #p2>img {
       position: absolute;
       left: -1000px;
-      animation: blink 1s infinite;
+      animation: blink 1s step-end infinite;
     }
 
     #h1img,
@@ -49,39 +58,92 @@
 
     @keyframes blink {
       0% {
-        opacity: 1;
+        display: 1;
       }
 
-      100% {
+      50% {
         opacity: 0;
       }
+    }
+
+    .clock2 {
+      width: 600px;
+      height: 300px;
+      background: black;
+      color: white;
+      margin: auto;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .clock2>#time {
+      font-size: 6rem;
+      margin: auto;
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+    .clock2>#date {
+      margin: auto;
+      font-size: 3rem;
+      font-family: 'Share Tech Mono', monospace;
     }
   </style>
 </head>
 
 <body>
-  
-  <div class="num" id="h1"><img src="diginumber.jpg" id="h1img"></div>
-  <div class="num" id="h2"><img src="diginumber.jpg" id="h2img"></div>
-  <div class="middle" id="p1"><img src="diginumber.jpg"></div>
-  <div class="num" id="m1"><img src="diginumber.jpg" id="m1img"></div>
-  <div class="num" id="m2"><img src="diginumber.jpg" id="m2img"></div>
-  <div class="middle" id="p2"><img src="diginumber.jpg"></div>
-  <div class="num" id="s1"><img src="diginumber.jpg" id="s1img"></div>
-  <div class="num" id="s2"><img src="diginumber.jpg" id="s2img"></div>
+  <div style="margin:auto;">
+    <div class="num" id="h1"><img src="diginumber.jpg" id="h1img"></div>
+    <div class="num" id="h2"><img src="diginumber.jpg" id="h2img"></div>
+    <div class="middle" id="p1"><img src="diginumber.jpg"></div>
+    <div class="num" id="m1"><img src="diginumber.jpg" id="m1img"></div>
+    <div class="num" id="m2"><img src="diginumber.jpg" id="m2img"></div>
+    <div class="middle" id="p2"><img src="diginumber.jpg"></div>
+    <div class="num" id="s1"><img src="diginumber.jpg" id="s1img"></div>
+    <div class="num" id="s2"><img src="diginumber.jpg" id="s2img"></div>
+  </div>
 </body>
 <script>
+  timeDisplay();
+  function timeDisplay() {
+    theTime = new Date();
+    timeArray = theTime.toTimeString().split(" ")[0].split(":");
+    document.querySelector("#h1img").style.left = "-" + (timeArray[0].substr(0, 1)) * 100 + "px";
+    document.querySelector("#h2img").style.left = "-" + (timeArray[0].substr(1, 1)) * 100 + "px";
+    document.querySelector("#m1img").style.left = "-" + (timeArray[1].substr(0, 1)) * 100 + "px";
+    document.querySelector("#m2img").style.left = "-" + (timeArray[1].substr(1, 1)) * 100 + "px";
+    document.querySelector("#s1img").style.left = "-" + (timeArray[2].substr(0, 1)) * 100 + "px";
+    document.querySelector("#s2img").style.left = "-" + (timeArray[2].substr(1, 1)) * 100 + "px";
+  }
+  setInterval(timeDisplay, 1000);
+</script>
+<div class="clock2">
+  <p id="time">12:00:00</p>
+  <p id="date">2099-06-18 CPA</p>
+</div>
+<script>
+  chgtime();
+  setInterval(chgtime, 1000);
+  function chgtime() {
+    let n_day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat'];
 
-  setInterval(function DigiClock() {
-    let theTime = new Date();
-    let timeArray = theTime.toTimeString().split(" ")[0].split(":"); //將cookie的字串分割成一組陣列
-    document.querySelector("#h1img").style.left = "-" + (timeArray[0].substr(0, 1) - 1) * 100 + "px";
-    document.querySelector("#h2img").style.left = "-" + (timeArray[0].substr(1, 1) - 1) * 100 + "px";
-    document.querySelector("#m1img").style.left = "-" + (timeArray[1].substr(0, 1) - 1) * 100 + "px";
-    document.querySelector("#m2img").style.left = "-" + (timeArray[1].substr(1, 1) - 1) * 100 + "px";
-    document.querySelector("#s1img").style.left = "-" + (timeArray[2].substr(0, 1) - 1) * 100 + "px";
-    document.querySelector("#s2img").style.left = "-" + (timeArray[2].substr(1, 1) - 1) * 100 + "px";
-  }, 0);
+    let nt = new Date();
+    let
+      n_hur = chkZero(nt.getHours()),
+      n_min = chkZero(nt.getMinutes()),
+      n_sec = chkZero(nt.getSeconds()),
+      n_yer = nt.getFullYear(),
+      n_mth = chkZero(nt.getMonth() + 1),
+      n_dat = chkZero(nt.getDate()),
+      n_key = nt.getDay();
+
+    document.getElementById("time").textContent = `${n_hur}:${n_min}:${n_sec}`;
+    document.getElementById("date").textContent = `${n_yer}-${n_mth}-${n_dat} ${n_day[n_key]}`;
+  }
+  function chkZero(num) {
+    return (num < 10) ? "0" + num : num;
+  }
 </script>
 
 </html>
