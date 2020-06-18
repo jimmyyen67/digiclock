@@ -83,9 +83,10 @@ function clockChange() {
   }
   switch (nowM1) {
     case "0":
+    case "0":
+      document.querySelector("#m1bar3").style.display = "block";
       document.querySelector("#m1bar4").style.display = "none";
       document.querySelector("#m1bar5").style.display = "block";
-      document.querySelector("#m1bar7").style.display = "block";
       break;
     case "1":
       document.querySelector("#m1bar1").style.display = "none";
@@ -118,25 +119,6 @@ function clockChange() {
       document.querySelector("#m1bar3").style.display = "none";
       document.querySelector("#m1bar5").style.display = "none";
       document.querySelector("#m1bar7").style.display = "block";
-      break;
-    case "6":
-      document.querySelector("#m1bar3").style.display = "none";
-      document.querySelector("#m1bar5").style.display = "block";
-      break;
-    case "7":
-      document.querySelector("#m1bar3").style.display = "block";
-      document.querySelector("#m1bar4").style.display = "none";
-      document.querySelector("#m1bar5").style.display = "none";
-      document.querySelector("#m1bar7").style.display = "none";
-      break;
-    case "8":
-      document.querySelector("#m1bar4").style.display = "block";
-      document.querySelector("#m1bar5").style.display = "block";
-      document.querySelector("#m1bar7").style.display = "block";
-      break;
-    case "9":
-      document.querySelector("#m1bar5").style.display = "none";
-      document.querySelector("#m1bar7").style.display = "none";
       break;
   }
   switch (nowM2) {
@@ -199,9 +181,9 @@ function clockChange() {
   }
   switch (nowS1) {
     case "0":
+      document.querySelector("#s1bar3").style.display = "block";
       document.querySelector("#s1bar4").style.display = "none";
       document.querySelector("#s1bar5").style.display = "block";
-      document.querySelector("#s1bar7").style.display = "block";
       break;
     case "1":
       document.querySelector("#s1bar1").style.display = "none";
@@ -235,25 +217,7 @@ function clockChange() {
       document.querySelector("#s1bar5").style.display = "none";
       document.querySelector("#s1bar7").style.display = "block";
       break;
-    case "6":
-      document.querySelector("#s1bar3").style.display = "none";
-      document.querySelector("#s1bar5").style.display = "block";
-      break;
-    case "7":
-      document.querySelector("#s1bar3").style.display = "block";
-      document.querySelector("#s1bar4").style.display = "none";
-      document.querySelector("#s1bar5").style.display = "none";
-      document.querySelector("#s1bar7").style.display = "none";
-      break;
-    case "8":
-      document.querySelector("#s1bar4").style.display = "block";
-      document.querySelector("#s1bar5").style.display = "block";
-      document.querySelector("#s1bar7").style.display = "block";
-      break;
-    case "9":
-      document.querySelector("#s1bar5").style.display = "none";
-      document.querySelector("#s1bar7").style.display = "none";
-      break;
+
   }
   switch (nowS2) {
     case "0":
