@@ -1,4 +1,4 @@
-*{
+* {
   transition: 0.5s;
 }
 .hour1,
@@ -8,464 +8,506 @@
 .sec1,
 .sec2 {
   display: block;
-  width: 280px;
-  min-width: 280px;
-  height: 520px;
+  width: 120px;
+  min-width: 120px;
+  height: 260px;
   position: relative;
+  margin-right: 20px;
+}
+.dot {
+  position: relative;
+}
+#dot1,
+#dot2,
+#dot3,
+#dot4 {
+  display: block;
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  height: 20px;
+  width: 20px;
+  background: goldenrod;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  animation: dot 1s step-start infinite;
+}
+@keyframes dot {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 #h1bar1 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
   top: 0px;
-  left: 30px;
+  left: 10px;
 }
 
 #h1bar2 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 0px;
 }
 
 #h1bar3 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 0px;
 }
 
 #h1bar4 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  top: 200px;
-  left: 30px;
+  top: 100px;
+  left: 10px;
 }
 
 #h1bar5 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
+  top: 110px;
   left: 0px;
 }
 
 #h1bar6 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
-  right: 20px;
+  top: 110px;
+  right: 0px;
 }
 
 #h1bar7 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  bottom: 80px;
-  left: 30px;
+  bottom: 40px;
+  left: 10px;
 }
 #h2bar1 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
   top: 0px;
-  left: 30px;
+  left: 10px;
 }
 
 #h2bar2 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 0px;
 }
 
 #h2bar3 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 0px;
 }
 
 #h2bar4 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  top: 200px;
-  left: 30px;
+  top: 100px;
+  left: 10px;
 }
 
 #h2bar5 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
+  top: 110px;
   left: 0px;
 }
 
 #h2bar6 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
-  right: 20px;
+  top: 110px;
+  right: 0px;
 }
 
 #h2bar7 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  bottom: 80px;
-  left: 30px;
+  bottom: 40px;
+  left: 10px;
 }
 #m1bar1 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
   top: 0px;
-  left: 30px;
+  left: 10px;
 }
 
 #m1bar2 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 0px;
 }
 
 #m1bar3 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 0px;
 }
 
 #m1bar4 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  top: 200px;
-  left: 30px;
+  top: 100px;
+  left: 10px;
 }
 
 #m1bar5 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
+  top: 110px;
   left: 0px;
 }
 
 #m1bar6 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
-  right: 20px;
+  top: 110px;
+  right: 0px;
 }
 
 #m1bar7 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  bottom: 80px;
-  left: 30px;
+  bottom: 40px;
+  left: 10px;
 }
 #m2bar1 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
   top: 0px;
-  left: 30px;
+  left: 10px;
 }
 
 #m2bar2 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 0px;
 }
 
 #m2bar3 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 0px;
 }
 
 #m2bar4 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  top: 200px;
-  left: 30px;
+  top: 100px;
+  left: 10px;
 }
 
 #m2bar5 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
+  top: 110px;
   left: 0px;
 }
 
 #m2bar6 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
-  right: 20px;
+  top: 110px;
+  right: 0px;
 }
 
 #m2bar7 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  bottom: 80px;
-  left: 30px;
+  bottom: 40px;
+  left: 10px;
 }
 #s1bar1 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
   top: 0px;
-  left: 30px;
+  left: 10px;
 }
 
 #s1bar2 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 0px;
 }
 
 #s1bar3 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 0px;
 }
 
 #s1bar4 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  top: 200px;
-  left: 30px;
+  top: 100px;
+  left: 10px;
 }
 
 #s1bar5 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
+  top: 110px;
   left: 0px;
 }
 
 #s1bar6 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
-  right: 20px;
+  top: 110px;
+  right: 0px;
 }
 
 #s1bar7 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  bottom: 80px;
-  left: 30px;
+  bottom: 40px;
+  left: 10px;
 }
 #s2bar1 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
   top: 0px;
-  left: 30px;
+  left: 10px;
 }
 
 #s2bar2 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 0px;
 }
 
 #s2bar3 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 0px;
 }
 
 #s2bar4 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  top: 200px;
-  left: 30px;
+  top: 100px;
+  left: 10px;
 }
 
 #s2bar5 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
+  top: 110px;
   left: 0px;
 }
 
 #s2bar6 {
   display: block;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: red;
-  height: 200px;
-  width: 40px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 100px;
+  width: 20px;
   position: absolute;
-  top: 220px;
-  right: 20px;
+  top: 110px;
+  right: 0px;
 }
 
 #s2bar7 {
   display: block;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: red;
-  height: 40px;
-  width: 200px;
+  border-radius: 50px;
+  background: goldenrod;
+  height: 20px;
+  width: 100px;
   position: absolute;
-  bottom: 80px;
-  left: 30px;
+  bottom: 40px;
+  left: 10px;
 }

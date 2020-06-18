@@ -1,5 +1,5 @@
 clockChange();
-setInterval(clockChange, 1000);
+setInterval(clockChange, 0);
 function clockChange() {
   switch (nowH1) {
     case "0":
@@ -221,60 +221,62 @@ function clockChange() {
   }
   switch (nowS2) {
     case "0":
+      document.querySelector("#s2bar1").style.transform = "rotate(0deg)" + "translate(0,0)";
+      document.querySelector("#s2bar2").style.transform = "rotate(0deg)" + "translate(0,0)";
+      document.querySelector("#s2bar3").style.transform = "rotate(0deg)" + "translate(0,0)";
       document.querySelector("#s2bar4").style.display = "none";
-      document.querySelector("#s2bar5").style.display = "block";
-      document.querySelector("#s2bar7").style.display = "block";
+      document.querySelector("#s2bar5").style.transform = "rotate(0deg)" + "translate(0,0)";
+      document.querySelector("#s2bar6").style.transform = "rotate(0deg)" + "translate(0,0)";
+      document.querySelector("#s2bar7").style.transform = "rotate(0deg)" + "translate(0,0)";
       break;
     case "1":
-      document.querySelector("#s2bar1").style.display = "none";
-      document.querySelector("#s2bar2").style.display = "none";
-      document.querySelector("#s2bar4").style.display = "none";
-      document.querySelector("#s2bar5").style.display = "none";
-      document.querySelector("#s2bar7").style.display = "none";
+      document.querySelector("#s2bar1").style.transform = "rotate(-90deg)" + "translate(-50px,50px)";
+      document.querySelector("#s2bar2").style.transform = "translate(100px,0)";
+      document.querySelector("#s2bar5").style.transform = "translate(100px,0)";
+      document.querySelector("#s2bar7").style.transform = "rotate(90deg)" + "translate(-50px,-50px)";
       break;
     case "2":
-      document.querySelector("#s2bar1").style.display = "block";
-      document.querySelector("#s2bar2").style.display = "none";
-      document.querySelector("#s2bar4").style.display = "block";
-      document.querySelector("#s2bar5").style.display = "block";
+      document.querySelector("#s2bar1").style.transform = "rotate(0deg)" + "translate(0px,0px)";
+      document.querySelector("#s2bar2").style.transform = "rotate(-90deg)" + "translate(-50px,50px)";
+      document.querySelector("#s2bar5").style.transform = "translate(0,0)";
       document.querySelector("#s2bar6").style.display = "none";
-      document.querySelector("#s2bar7").style.display = "block";
+      document.querySelector("#s2bar7").style.transform = "rotate(0deg)" + "translate(0,0)";
       break;
     case "3":
-      document.querySelector("#s2bar2").style.display = "none";
-      document.querySelector("#s2bar5").style.display = "none";
-      document.querySelector("#s2bar6").style.display = "block";
+      document.querySelector("#s2bar5").style.transform = "translate(100px,0)";
       break;
     case "4":
-      document.querySelector("#s2bar1").style.display = "none";
-      document.querySelector("#s2bar2").style.display = "block";
-      document.querySelector("#s2bar5").style.display = "none";
-      document.querySelector("#s2bar7").style.display = "none";
+      document.querySelector("#s2bar1").style.transform = "translate(0,-50px)";
+      document.querySelector("#s2bar2").style.transform = "rotate(0deg)" + "translate(0,0)";
+      document.querySelector("#s2bar7").style.transform = "translate(0,-100px)";
       break;
     case "5":
-      document.querySelector("#s2bar1").style.display = "block";
-      document.querySelector("#s2bar3").style.display = "none";
-      document.querySelector("#s2bar5").style.display = "none";
-      document.querySelector("#s2bar7").style.display = "block";
+      document.querySelector("#s2bar1").style.transform = "rotate(360deg)" + "translate(0,0)";
+      document.querySelector("#s2bar2").style.transform = "rotate(-180deg)" + "translate(0,0)";
+      document.querySelector("#s2bar3").style.transform = "rotate(-90deg)" + "translate(-50px,-50px)";
+      document.querySelector("#s2bar7").style.transform = "translate(0,0)" + "rotate(180deg)";
       break;
     case "6":
-      document.querySelector("#s2bar3").style.display = "none";
-      document.querySelector("#s2bar5").style.display = "block";
+      document.querySelector("#s2bar5").style.transform = "rotate(0deg)" + "translate(0,0)";
+      document.querySelector("#s2bar6").style.display = "block";
       break;
     case "7":
-      document.querySelector("#s2bar3").style.display = "block";
-      document.querySelector("#s2bar4").style.display = "none";
-      document.querySelector("#s2bar5").style.display = "none";
-      document.querySelector("#s2bar7").style.display = "none";
+      document.querySelector("#s2bar3").style.transform = "rotate(180deg)" + "translate(0,0)";
+      document.querySelector("#s2bar5").style.transform = "rotate(0deg)" + "translate(0,-100px)";
+      document.querySelector("#s2bar7").style.transform = "translate(0,-200px)" + "rotate(180deg)";
       break;
     case "8":
+      document.querySelector("#s2bar1").style.transform = "rotate(0deg)" + "translate(0,0)";
+      document.querySelector("#s2bar2").style.transform = "rotate(0deg)" + "translate(0,0)";
+      document.querySelector("#s2bar3").style.transform = "rotate(0deg)" + "translate(0,0)";
       document.querySelector("#s2bar4").style.display = "block";
-      document.querySelector("#s2bar5").style.display = "block";
-      document.querySelector("#s2bar7").style.display = "block";
+      document.querySelector("#s2bar5").style.transform = "rotate(0deg)" + "translate(0,0)";
+      document.querySelector("#s2bar6").style.transform = "rotate(0deg)" + "translate(0,0)";
+      document.querySelector("#s2bar7").style.transform = "rotate(0deg)" + "translate(0,0)";
       break;
     case "9":
-      document.querySelector("#s2bar5").style.display = "none";
-      document.querySelector("#s2bar7").style.display = "none";
+      document.querySelector("#s2bar5").style.transform = "rotate(90deg)" + "translate(-150px,-50px)";
+      document.querySelector("#s2bar7").style.transform = "rotate(90deg)" + "translate(-150px,-50px)";
       break;
   }
 }
