@@ -1,10 +1,15 @@
+*{
+  transition: 0.5s;
+}
 .hour1,
 .hour2,
 .mins1,
 .mins2,
 .sec1,
 .sec2 {
+  display: block;
   width: 280px;
+  min-width: 280px;
   height: 520px;
   position: relative;
 }
@@ -151,6 +156,310 @@
 }
 
 #h2bar7 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  bottom: 80px;
+  left: 30px;
+}
+#m1bar1 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+#m1bar2 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+#m1bar3 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#m1bar4 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left: 30px;
+}
+
+#m1bar5 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 220px;
+  left: 0px;
+}
+
+#m1bar6 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 220px;
+  right: 20px;
+}
+
+#m1bar7 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  bottom: 80px;
+  left: 30px;
+}
+#m2bar1 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+#m2bar2 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+#m2bar3 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#m2bar4 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left: 30px;
+}
+
+#m2bar5 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 220px;
+  left: 0px;
+}
+
+#m2bar6 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 220px;
+  right: 20px;
+}
+
+#m2bar7 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  bottom: 80px;
+  left: 30px;
+}
+#s1bar1 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+#s1bar2 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+#s1bar3 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#s1bar4 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left: 30px;
+}
+
+#s1bar5 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 220px;
+  left: 0px;
+}
+
+#s1bar6 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 220px;
+  right: 20px;
+}
+
+#s1bar7 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  bottom: 80px;
+  left: 30px;
+}
+#s2bar1 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+#s2bar2 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+#s2bar3 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#s2bar4 {
+  display: block;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: red;
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left: 30px;
+}
+
+#s2bar5 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 220px;
+  left: 0px;
+}
+
+#s2bar6 {
+  display: block;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: red;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  top: 220px;
+  right: 20px;
+}
+
+#s2bar7 {
   display: block;
   clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
   background: red;
